@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #FFF6F6 0%, #E3E2E5 19%, #CAD1D6 45%, #4E7D8D 100%);
+    background-color: #4E7D8D;
+}
+
+.content {
+    flex: 1;
+}
+
+/*--> FONT <--*/
+
+.brand-text {
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    color: #F9F3BF;
+}
+
+.text1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+.text2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+
+/*--> IMAGES <--*/
+
+.imgUser{
+    width: 4rem;
+    height: 3.8rem;
+    border-radius: 50%;
+}
+
+.imgLogo{
+    width: 5rem;
+    height: 4.8rem;
+    border-radius: 50%;
+}
+
+/*--> NAVBAR <--*/
+
+.navbar1{
+    display: flex;
+    width: 100%;
+    height: 6rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 7rem;
+}
+
+.redes{
+    align-items: center;
+    padding: 2rem;
+    padding-left: 7rem;
+}
+
+.bienvenido{
+    padding: 0.5rem;
+    padding-right: 7rem;
+}
+
+.container{
+    padding-left: 7rem;
+}
+
+.container2{
+    padding-right: 6rem;
+}
+
+.menuHamburguesa{
+    padding-right: 6rem;
+}
+
+.bg-navbar1color {
+    background-color: #1287AF;
+}
+
+.bg-navbarcolor{
+    background-color: #6397A9;
+}
+
+.navbar-dark .nav-item .nav-link {
+    color: #fff;
+}
+  
+.navbar-dark .nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 0.25rem;
+    color: #fff;
+}
+  
+.fa-li {
+    position: relative;
+    left: 0;
+}
+
+/*BUTTON NAVBAR*/
+
+.btn-cerrar-sesion {
+    background-color: #06546F !important;
+    color: #fff !important; /* Cambia el color del texto a blanco */
+}
+
+#cerrarSesionBtn {
+    font-family: 'Jutson', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+/* ICONS NAVBAR */  
+
+.iconNavbar{
+    /* width: 100%; */
+    display: flex;
+    height: 4rem;
+    /* justify-content: center; */
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    gap: 3rem;
+}
+
+.iconRedes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.iconRedes:hover{
+    transform: scale(1.2);
+}
+
+.brand-text {
+    vertical-align: middle;
+}
+  
+
+/*--> FOOTER <--*/
+footer {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    width: 100%;
+    bottom: 0;
+    position: fixed; 
+}
+
+.bg-footer-color{
+    background-color: #06546F;
+}
+
+/* Contenedor del footer */
+.footer {
+    padding: 1rem 0; /* Reducir el relleno vertical */
+}
