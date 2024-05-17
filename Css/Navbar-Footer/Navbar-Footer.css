@@ -16,13 +16,13 @@ body {
 
 .brand-text {
     font-family: 'Lobster Two', cursive;
-    font-size: 30px;
+    font-size: 40px;
     color: #F9F3BF;
 }
 
 .text1{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
     color: black;
@@ -30,45 +30,62 @@ body {
 
 .text2{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
     color: black;
 }
 
-.text-center{
-    margin-top: 8px;
-    margin-bottom: 2px;
-}
-
-/*--> CONTENEDORES <--*/
-
-.container{
-    height: 55px;
-    text-align: center;
-    margin-top: 2px;
-}
-
-/* Contenedor del footer */
-.footer {
-    padding: 6px 0; /* Reducir el relleno vertical */
-}
 
 /*--> IMAGES <--*/
 
 .imgUser{
-    width: 40px;
-    height: 38px;
+    width: 4rem;
+    height: 3.8rem;
     border-radius: 50%;
 }
 
 .imgLogo{
-    width: 50px;
-    height: 48px;
+    width: 5rem;
+    height: 4.8rem;
     border-radius: 50%;
 }
 
 /*--> NAVBAR <--*/
+
+.navbar1{
+    display: flex;
+    width: 100%;
+    height: 6rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 7rem;
+}
+
+.redes{
+    align-items: center;
+    padding: 2rem;
+    padding-left: 7rem;
+}
+
+.bienvenido{
+    padding: 0.5rem;
+    padding-right: 7rem;
+}
+
+.container{
+    padding-left: 7rem;
+}
+
+.container2{
+    padding-right: 6rem;
+}
+
+.menuHamburguesa{
+    padding-right: 6rem;
+}
 
 .bg-navbar1color {
     background-color: #1287AF;
@@ -103,18 +120,19 @@ body {
 
 #cerrarSesionBtn {
     font-family: 'Jutson', sans-serif;
-    font-size: 10px;
+    font-size: 1.2rem;
 }
 
 
 /* ICONS NAVBAR */  
 
 .iconNavbar{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
-    justify-content: center;
+    height: 4rem;
+    /* justify-content: center; */
     flex-wrap: nowrap;
-    align-items: center;
+    /* align-items: center; */
     gap: 3rem;
 }
 
@@ -122,10 +140,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 40px;
-    height: 40px;
-    font-size: 25px;
-    border-radius: 50px;
+    min-width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 5rem;
     color: rgb(0, 0, 0);
     transition: all 0.3s ease;
 }
@@ -142,7 +160,7 @@ body {
 /*--> FOOTER <--*/
 footer {
     background-color: #f8f9fa;
-    padding: 20px;
+    padding: 2rem;
     width: 100%;
     bottom: 0;
     position: fixed; 
@@ -152,3 +170,7 @@ footer {
     background-color: #06546F;
 }
 
+/* Contenedor del footer */
+.footer {
+    padding: 1rem 0; /* Reducir el relleno vertical */
+}

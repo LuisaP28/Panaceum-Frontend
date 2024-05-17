@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/Inicio.css">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous"/>
-
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -20,6 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Panaceum</title>
 </head>
 <body>
@@ -27,8 +29,7 @@
 
 <!-- NAVBAR1 -->
 <nav class="navbar1 navbar-light bg-navbar1color">
-  <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
+      <div class="redes">
           <!-- Redes Sociales -->
           <div class="social-media-icons">
             <i class="fab fa-facebook-f iconRedes"></i>
@@ -36,18 +37,17 @@
             <i class="fab fa-instagram iconRedes"></i>
             <i class="fab fa-whatsapp iconRedes"></i>
           </div>
+      </div> 
           <!-- Final de Redes Sociales -->
           
-          <div class="text-center">
-            <a class="navbar-brand" href="#">
-                <p class="text1 navbar-text">Bienvenido</p>
-                <img src="./Images/WhatsApp Image 2021-11-13 at 10.13.35 AM.jpeg" alt="" width="30" height="24" class="imgUser d-inline-block align-text-top">
-                <p class="text1 navbar-text">Miguel</p>  
-            </a>            
-            <button id="cerrarSesionBtn" class="btn btn-cerrar-sesion" type="submit">Cerrar sesión</button>
-        </div>        
-      </div>  
-  </div>      
+      <div class="bienvenido ml-auto">
+          <a class="navbar-brand" href="#">
+              <p class="text1 navbar-text">Bienvenido</p>
+              <img src="./Images/WhatsApp Image 2021-11-13 at 10.13.35 AM.jpeg" alt="" width="30" height="24" class="imgUser d-inline-block align-text-top">
+              <p class="text1 navbar-text">Miguel</p>  
+          </a>            
+          <button id="cerrarSesionBtn" class="btn btn-cerrar-sesion" type="submit">Cerrar sesión</button>
+      </div>         
 </nav>
 
 <!-- NAVBAR2-->
@@ -57,71 +57,65 @@
       <img class="imgLogo" src="./Images/Logo17777.PNG" alt="" width="30" height="24">
       <span class="brand-text">Panaceum</span>
     </a>
+  </div>
 
+  <div class="menuHamburguesa">
     <!-- Botón para activar la barra de navegación en pantallas pequeñas -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
+  </div>
+  
     <!-- Contenido de la barra de navegación -->
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="text1 nav-link" aria-current="page" href="#">Inicio</a>
+    <div class="container2">
+      <div class="collapse navbar-collapse" id="navbarText">      
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="text1 nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="text1 nav-link" href="#">Perfil</a>
+            </li>
+            <li class="nav-item">
+                <a class="text1 nav-link" href="#">Datos</a>
+            </li>
+            <li class="nav-item">
+                <a class="text1 nav-link" href="#">Tratamiento</a>
+            </li>
+            <li class="nav-item">
+              <a class="text1 nav-link" href="#">Historial</a>
           </li>
-          <li class="nav-item">
-              <a class="text1 nav-link" href="#">Perfil</a>
-          </li>
-          <li class="nav-item">
-              <a class="text1 nav-link" href="#">Datos</a>
-          </li>
-          <li class="nav-item">
-              <a class="text1 nav-link" href="#">Tratamiento</a>
-          </li>
-          <li class="nav-item">
-            <a class="text1 nav-link" href="#">Historial</a>
-        </li>
-      </ul>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
 <!-- FINAL NAVBAR -->
 
-<!-- CONTENIDO DE INICIO -->
-
-<main>
-  <div class="contenedorPpal">
-    <img class="img1" src="https://www.freepik.es/foto-gratis/composicion-plana-elementos-medicos_12413013.htm#fromView=search&page=1&position=14&uuid=d46a0283-4fde-4387-83e1-9a083751e4b2">
-    <img class="img2" src="https://www.freepik.es/foto-gratis/doctor-sosteniendo-pastillas_21017949.htm#fromView=search&page=2&position=21&uuid=8852e02f-4055-4102-a80e-25fffff2ed35">
-    <img class="img3" src="https://www.freepik.es/foto-gratis/composicion-medica-pastillas_9185257.htm#fromView=search&page=1&position=23&uuid=d46a0283-4fde-4387-83e1-9a083751e4b2">
-  
-    <div class="contenedor2Inicio">
-      <p></p>
-    </div>
-  </div>
-</main>
-
-
-<!-- FINAL DEL CONTENIDO DE INICIO -->
-
-
 <!-- FOOTER-->
 
-  <footer class="footer bg-footer-color">
-      <!-- Copyright -->
-      <div class="text2 text-center p-3">
-        © 2024 Copyright:
-        <a class="text2" href="">Riwi-Coders</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
+<footer class="footer bg-footer-color">
+    <!-- Copyright -->
+    <div class="text2 text-center p-3">
+      © 2024 Copyright:
+      <a class="text2" href="">Riwi-Coders</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 <!-- FINAL FOOTER-->
 
 
 <script type="module" src="./Js/app.js"></script>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-  </style>
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+</style>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+</style>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 </body>
 </html>
