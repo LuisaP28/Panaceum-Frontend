@@ -55,8 +55,8 @@ async function paintClient() {
         <td class=""> ${user.diag} </td>
         <td class=""> ${user.med} </td>
         <td>
-            <button type="button" class="btn btn-warning btnDelete" data-id="${user.id}" >Eliminar</button>
-            <button type="button" class="btn btn-info btnUpdate" data-id="${user.id}" >Actualizar</button>
+            <button type="button" class="btn btn-outline-info btnUpdate" data-id="${user.id}" >Actualizar</button>
+            <button type="button" class="btn btn-outline-warning btnDelete" data-id="${user.id}" >Eliminar</button>
         </td>
     </tr>
 `;
