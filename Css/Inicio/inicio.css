@@ -148,5 +148,5 @@ p{
 }
 
 .contenedorCard:hover {
-    transform: scale(1.1); /* Aplica un zoom del 10% al hacer clic */
+    transform: scale(1.1); 
 }
