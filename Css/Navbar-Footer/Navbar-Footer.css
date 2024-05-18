@@ -65,7 +65,7 @@ body {
 }
 
 .redes{
-    align-items: center;
+
     padding: 2rem;
     padding-left: 7rem;
 }
@@ -76,7 +76,8 @@ body {
 }
 
 .container{
-    padding-left: 7rem;
+    padding: 2rem;
+    padding-left: 5rem;
 }
 
 .container2{
@@ -140,10 +141,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 4rem;
-    height: 4rem;
+    min-width: 3rem;
+    height: 1rem;
     font-size: 2rem;
-    border-radius: 5rem;
+    /* border-radius: 2rem; */
     color: rgb(0, 0, 0);
     transition: all 0.3s ease;
 }

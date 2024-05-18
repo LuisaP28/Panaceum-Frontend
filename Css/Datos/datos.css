@@ -1,0 +1,168 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 10rem); 
+    padding: 2rem;
+}
+
+
+.cards {
+    background-color: #F5F2DB;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease;
+}
+
+.cards:hover {
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/*--> FONT <--*/
+.titleInput {
+    flex: 1;
+    margin-right: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: left; 
+}
+
+h3 {
+    margin-bottom: 1.5rem;
+padding-bottom: 2rem;
+    text-align: center;
+    font-family: 'Jutson', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*--> INPUTS <--*/
+.input1{
+    flex: 2;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+    max-width: 20rem;
+}
+
+.input2 {
+    width: 100%;
+    padding-right: 100px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+}
+
+.input3{
+    flex: 2;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #fef6ac77;
+}
+
+.input1, .input2, .input3, .input-group {
+    flex: 2;
+    padding: 0.5rem;
+    border: 1px solid #ffffff00;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #fef6ac77;
+}
+
+.input2-container {
+    position: relative;
+    width: 100%;
+}
+
+
+/*--> MENU DESPLEGABLE <--*/
+
+.dropdown-menu {
+    width: 100%;
+    text-align: center;
+    background-color: #fef6ac77;
+    border: none;
+    border-radius: 5px;
+}
+
+.dropdown-menu li{
+    background-color: #D9D9D9;
+}
+
+.dropdown-menu .dropdown-item {
+    text-align: center;
+    color: #000;
+    padding: 0.5rem 1rem;
+}
+
+/*--> BOTONES <--*/
+.btnSelec{
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0.5rem;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #fef6ac77;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 2px);
+}
+
+.btnSelec:hover{
+    border: none;
+
+}
+
+.btnGuardar {
+    background-color: #427282 !important;
+    color: #fff !important;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.btnGuardar:hover {
+    background-color: #365c66;
+}
+
+#guardarBtn {
+    font-family: 'Jutson', sans-serif;
+    font-size: 1.2rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
