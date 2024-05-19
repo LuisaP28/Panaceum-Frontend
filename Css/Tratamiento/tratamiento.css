@@ -1,0 +1,133 @@
+/* Estilos para centrar solo el contenido de las tarjetas */
+.col1 {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card1 {
+    width: 450px; 
+    height: 550px; 
+    border: 8px solid #278357;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    perspective: 1000px;
+}
+
+.card1:hover {
+    transform: scale(1.05) rotateY(180deg);
+}
+
+.card1 .card-front, .card1 .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index: 1;
+    transform: rotateY(180deg);
+    background-color: rgb(243, 240, 222);
+}
+
+.card-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    z-index: 1;
+    transform: rotateY(180deg);
+    background-color:rgb(243, 240, 222);
+}
+
+.card-body1, .card-body2 {
+    padding: 15px;
+}
+
+/*--> FONT <--*/
+
+.card-title{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    background-color: #27835732;
+    font-size: 24px;
+    justify-content: center;
+}
+
+.card-text{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+/*--> BOTÓN <--*/
+.btn{
+    background-color: #427282 !important;
+    color: #fff !important;
+    border: solid 2px #427282;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.estado-btn {
+    margin-top: 20px;
+    position: relative;
+}
+
+.estado-options {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    display: none;
+}
+
+.estado-options.show {
+    display: block;
+}
+
+/* Estilo para los botones de estado */
+.btn-estado {
+    margin-right: 5px;
+}
+
+/* Colores para los bordes según el estado */
+.card1.pendiente {
+    border-color: red;
+}
+
+.card1.en-proceso {
+    border-color: blue;
+}
+
+.card1.finalizado {
+    border-color: green;
+}
+
+
+@media (max-width: 560px) {
+    .card1 {
+        width: 100%;
+        height: auto; 
+    }
+}
