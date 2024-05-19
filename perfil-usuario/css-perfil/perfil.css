@@ -1,0 +1,411 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #FFF6F6 0%, #E3E2E5 19%, #CAD1D6 45%, #4E7D8D 100%);
+    background-color: #4E7D8D;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container{
+    justify-content: center;
+    align-content: center;
+    width: 30%;
+}
+
+.imgPerfil{
+    width: 10rem;
+}
+
+
+
+.content {
+    flex: 1;
+}
+
+/*--> FONT <--*/
+
+.brand-text {
+    font-family: 'Lobster Two', cursive;
+    font-size: 30px;
+    color: #F9F3BF;
+}
+
+
+
+.text1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+.text2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+.text-center{
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
+/*--> CONTENEDORES <--*/
+
+.redes{
+   align-items: center;
+   text-align: center;
+   padding: 20px;
+}
+
+.bienvenido{
+    padding: 1rem 5.7rem 0rem 0rem;
+}
+
+
+.container{
+    height: 55px;
+    text-align: center;
+    margin-top: 2px;
+    padding-left: 20rem;
+}
+
+.links{
+    padding-right: 4.2rem;
+}
+
+/* Contenedor del footer */
+.footer {
+    padding: 6px 0; /* Reducir el relleno vertical */
+}
+
+/*--> IMAGES <--*/
+
+.imgUser{
+    width: 40px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.imgLogo{
+    width: 50px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+/*--> NAVBAR <--*/
+
+.logoPanaceum{
+    padding-left: 3.4rem;
+}
+
+.navbar1{
+    display: flex;
+}
+
+
+.bg-navbar1color {
+    background-color: #1287AF;
+}
+
+.bg-navbarcolor{
+    background-color: #6397A9;
+}
+
+.navbar-dark .nav-item .nav-link {
+    color: #fff;
+}
+  
+.navbar-dark .nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 0.25rem;
+    color: #fff;
+}
+  
+.fa-li {
+    position: relative;
+    left: 0;
+}
+
+/*BUTTON NAVBAR*/
+
+.btn-cerrar-sesion {
+    background-color: #06546F !important;
+    color: #fff !important; /* Cambia el color del texto a blanco */
+}
+
+#cerrarSesionBtn {
+    font-family: 'Jutson', sans-serif;
+    font-size: 10px;
+}
+
+
+/* ICONS NAVBAR */  
+
+.redes{
+    padding-left: 4.8rem;
+}
+
+.iconRedes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.iconRedes:hover{
+    transform: scale(1.2);
+}
+
+.brand-text {
+    vertical-align: middle;
+}
+  
+
+/*--> FOOTER <--*/
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.bg-footer-color{
+    background-color: #06546F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
