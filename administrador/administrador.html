@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../administrador/Css/administrador.css" />
     <link
@@ -62,7 +62,7 @@
           <p class="textNameAdmin navbar-text">Miguel Tabares</p>
         </a>
         <button
-          id="cerrarSesionBtn"
+          id="logoutBtn"
           class="btn btn-cerrar-sesion"
           type="submit"
         >
@@ -124,6 +124,104 @@
     </nav>
     <!-- FINAL NAVBAR -->
 
+  <!-- MODAL DE CREACIÓN DE PACIENTE -->
+  <div class="modal fade" id="createPatientModal" tabindex="-1" role="dialog" aria-labelledby="createPatientModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="createPatientModalLabel">Crear Paciente</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="createPatientForm">
+            <div class="form-group">
+              <label for="patientName">Nombre completo</label>
+              <input type="text" class="form-control" id="patientName" required>
+            </div>
+            <div class="form-group">
+              <label for="patientType">Tipo de documento</label>
+              <input type="text" class="form-control" id="patientType" required>
+            </div>
+            <div class="form-group">
+              <label for="patientCC">Documento</label>
+              <input type="text" class="form-control" id="patientCC" required>
+            </div>
+            <div class="form-group">
+              <label for="patientBirth">Fecha de nacimiento</label>
+              <input type="date" class="form-control" id="patientBirth" required>
+            </div>
+            <div class="form-group">
+              <label for="patientEmail">Email</label>
+              <input type="email" class="form-control" id="patientEmail" required>
+            </div>
+            <div class="form-group">
+              <label for="patientDiag">Diagnóstico</label>
+              <input type="text" class="form-control" id="patientDiag" required>
+            </div>
+            <div class="form-group">
+              <label for="patientMed">Medicamento</label>
+              <input type="text" class="form-control" id="patientMed" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DE ACTUALIZACIÓN DE PACIENTE -->
+
+    <div class="modal fade" id="updatePatientModal" tabindex="-1" role="dialog" aria-labelledby="updatePatientModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="updatePatientModalLabel">Actualizar Paciente</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="updatePatientForm">
+              <input type="hidden" id="updatePatientId">
+              <div class="form-group">
+                <label for="updatePatientName">Nombre completo</label>
+                <input type="text" class="form-control" id="updatePatientName" required>
+              </div>
+              <div class="form-group">
+                <label for="updatePatientType">Tipo de documento</label>
+                <input type="text" class="form-control" id="updatePatientType" required>
+              </div>
+              <div class="form-group">
+                <label for="updatePatientCC">Documento</label>
+                <input type="text" class="form-control" id="updatePatientCC" required>
+              </div>
+              <div class="form-group">
+                <label for="updatePatientBirth">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="updatePatientBirth" required>
+              </div>
+              <div class="form-group">
+                <label for="updatePatientEmail">Email</label>
+                <input type="email" class="form-control" id="updatePatientEmail" required>
+              </div>
+              <div class="form-group">
+                <label for="updatePatientDiag">Diagnóstico</label>
+                <input type="text" class="form-control" id="updatePatientDiag" required>
+              </div>
+              <div class="form-group">
+                <label for="updatePatientMed">Medicamento</label>
+                <input type="text" class="form-control" id="updatePatientMed" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <!-- CONTENIDO DE INICIO -->
     <div class="center-container">
       <main class="table-container ">
@@ -133,11 +231,11 @@
             <h1 class="title_table">Sistema de gestión de usuarios</h1>
             <div class="input">
               <div class="input-container">
-                <input type="text" placeholder="Ingrese el nombre del usuario">
-                <button class="btn btn-outline-primary" type="button" id="button-addon2">Listar</button>
+                <input id="searchPatientInput" type="text" placeholder="Ingrese el nombre del paciente">
+                <button class="btn btn-outline-primary" type="button" id="btnGet">Listar</button>
               </div>
               <div class="button-container">
-                <button class="btn btn-outline-success" type="button" id="button-addon2">Crear</button>
+                <button class="btn btn-outline-success" type="button" id="btnPost">Crear</button>
               </div>
             </div>
           </div>
@@ -155,62 +253,8 @@
                   <th>Acciones</th>
                 </tr>
               </thead>
-              <tbody class="tbody">
-                <!-- T -->
-                <tr>
-                  <td class="">Fabiana Andrea Aguilar Gaviria</td>
-                  <td class="">Cédula</td>
-                  <td class="">1125466325</td>
-                  <td class="">2024-02-25</td>
-                  <td class="">fabiaguilar@gmail.com</td>
-                  <td class="">Diabetes</td>
-                  <td class="">Insulina</td>
-                  <td>
-                    <button type="button" class="btn btn-outline-info">
-                      Actualizar
-                    </button>
-                    <button type="button" class="btn btn-outline-warning">
-                      Eliminar
-                    </button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="">Hernando Aguirre Arroyave</td>
-                  <td class="">Cédula</td>
-                  <td class="">1128658741</td>
-                  <td class="">2024-10-25</td>
-                  <td class="">hernandoaguirre@gmail.com</td>
-                  <td class="">Amigdalitis</td>
-                  <td class="">Azitromicina</td>
-                  <td>
-                    <button type="button" class="btn btn-outline-info">
-                      Actualizar
-                    </button>
-                    <button type="button" class="btn btn-outline-warning">
-                      Eliminar
-                    </button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="">Oscar Alejandro Manrique Quintero</td>
-                  <td class="">Cédula</td>
-                  <td class="">1145653200</td>
-                  <td class="">2024-10-19</td>
-                  <td class="">oscarmanrique@gmail.com</td>
-                  <td class="">Hipertensión</td>
-                  <td class="">Losartán</td>
-                  <td>
-                
-                    <button type="button" class="btn btn-outline-info">
-                      Actualizar
-                    </button>
-                    <button type="button" class="btn btn-outline-warning">
-                      Eliminar
-                    </button>
-                  </td>
-                </tr>
+              <tbody class="tbody" id="tbodyPatient">
+                <!-- ESPACIO PARA LLENAR LA TABLA DINÁMICAMENTE -->
               </tbody>
             </table>
           </div>
@@ -231,6 +275,14 @@
       <!-- Copyright -->
     </footer>
     <!-- FINAL FOOTER-->
+
+  <!-- Scripts de Bootstrap y otros -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa2nUwvY8vUU0Z68/rT04d4n" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy+VWRDajdLEaU5zKUKdC9z/4+I5Bp59C+bbba" crossorigin="anonymous"></script>
+  <script src="../administrador/js-administrador/administrador.js"></script>
+
+
 
     <script type="module" src="../administrador/js-administrador/administrador.js"></script>
     <style>
