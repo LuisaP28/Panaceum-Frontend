@@ -90,7 +90,7 @@ let data = [
 logOutButton.addEventListener('click', function() {
     if (confirm('¿Estás seguro de que deseas cerrar sesión?')) {
         localStorage.removeItem('accessToken');
-        window.location.href = '/login';
+        window.location.href = '../../inicio.html';
     }
 });
 
