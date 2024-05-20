@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 html, body {
     height: 100%;
     margin: 0;
@@ -31,7 +34,7 @@ main {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    margin-top: 20vh;
+    margin-top: 1rem;
     transition: box-shadow 0.3s ease;
 }
 
@@ -55,80 +58,36 @@ main {
     flex: 1;
     margin-right: 1rem;
     text-transform: uppercase;
-    font-size: 20px;
-    text-align: left; 
+    font-size: 1rem;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
 }
 
-h3 {
+h2 {
     margin-bottom: 1.5rem;
     padding-bottom: 2rem;
     text-align: center;
-    font-family: 'Jutson', sans-serif;
-    font-size: 50px;
+    font-family: 'Lobster Two', cursive;
     font-weight: bold;
 }
 
 /*--> INPUTS <--*/
-.input1{
+.input{
     flex: 2;
     padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    margin-left: 2rem;
-    align-items: center;
-    font-size: 20px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-}
-
-.input2 {
-    width: 100%;
-    padding-right: 100px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.input3{
-    flex: 2;
-    padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 20px;
     display: flex;
     align-items: center;
     background-color: #fef6ac77;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-}
-
-.input1, .input2, .input3, .input-group {
-    flex: 2;
-    padding: 0.75rem;
-    border: 1px solid #ffffff00;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    background-color: #fef6ac77;
     margin-left: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    font-family: 'Ubuntu', sans-serif;
 }
 
-
-/*--> MENU DESPLEGABLE <--*/
-
-.dropdown-menu {
-    width: 100%;
-    text-align: center;
-    background-color: #a7a27b77;
-    border: none;
-    border-radius: 5px;
-}
-
-.dropdown-menu li{
-    background-color: #fef6ac55;
-}
-
-.dropdown-menu .dropdown-item {
-    text-align: center;
-    color: #000;
-    padding: 0.5rem 1rem;
+.input:hover{
+    border: 1px solid;    
 }
 
 /*--> BOTONES <--*/

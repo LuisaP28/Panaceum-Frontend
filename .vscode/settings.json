@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/administrador.html"
+    "livePreview.defaultPreviewPath": "/administrador.html",
+    "liveServer.settings.port": 5501
 }

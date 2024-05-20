@@ -141,7 +141,11 @@ section.table {
     vertical-align: middle;
 }
 
+<<<<<<< HEAD:Css/Administrador/administrador.css
+.text1{
+=======
 .text1 {
+>>>>>>> develop:css/Administrador/administrador.css
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.8rem;
     text-transform: uppercase;
