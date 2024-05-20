@@ -1,52 +1,62 @@
-body {
+/* Estilo global */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
+}
 
+/* Configuración del body para usar flexbox */
+body {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom, #FFF6F6 0%, #E3E2E5 19%, #CAD1D6 45%, #4E7D8D 100%);
     background-color: #4E7D8D;
 }
 
-/*--> TABLE <--*/
+/* Asegurando que el contenido ocupe el espacio disponible */
+.content {
+    flex: 1;
+}
 
+/* Estilo del footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    width: 100%;
+}
 
-
-.table-container{
+/* Otros estilos existentes */
+.table-container {
     display: flex;
     flex-direction: column;
 }
 
-
-.title_table{
+.title_table {
     padding-left: 4.5rem;
     padding-top: 2rem;
     padding-bottom: 0.5rem;
 }
 
-table{
+table {
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-
-input{
+input {
     vertical-align: middle;
     height: 2rem;
-    width: 27.6rem ;
+    width: 27.6rem;
     color: black;
 }
 
-input::placeholder{
+input::placeholder {
     font-size: 1.15rem;
     color: gray;
 }
 
-
-.input{
+.input {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -55,15 +65,14 @@ input::placeholder{
     padding-bottom: 0.5rem;
 }
 
-.button-container{
+.button-container {
     margin-right: 5rem;
 }
 
-table, th, td{
+table, th, td {
     border-collapse: collapse;
     padding: 1rem;
     text-align: left;
-
 }
 
 thead th {
@@ -73,7 +82,7 @@ thead th {
     background-color: #d5d1defe;
 }
 
-tbody tr:nth-child(even){
+tbody tr:nth-child(even) {
     background-color: #0000000b;
 }
 
@@ -81,85 +90,77 @@ tbody tr:hover {
     background-color: #fff6;
 }
 
-section.table{
+section.table {
     width: 100%;
     background-color: #fff5;
-
     backdrop-filter: blur(8px);
     box-shadow: 0 .4rem .8rem #0005;
     border-radius: .8rem;
     padding-top: 1rem;
-    padding-bottom: 10.1rem;
-
-    overflow: hidden; 
+    padding-bottom: 24rem;
+    overflow: hidden;
 }
 
-.table_header{
+.table_header {
     font-family: 'Lobster Two', cursive;
     width: 100%;
     height: 25%;
     background-color: #fff4;
-
     padding: .8rem 1rem;
 }
 
-.table_body{
+.table_body {
     font-family: 'Lobster Two', cursive;
     width: 87.5%;
     max-height: calc(89% - 1.6rem);
     background-color: #fffb;
-
     margin: .5rem auto;
     border-radius: .6rem;
-
     overflow: auto;
 }
 
-.table_body::-webkit-scrollbar{
+.table_body::-webkit-scrollbar {
     width: 0.5rem;
     height: 0.2rem;
 }
 
-.table_body::-webkit-scrollbar-thumb{
+.table_body::-webkit-scrollbar-thumb {
     border-radius: .5rem;
     background-color: #0004;
     visibility: hidden;
 }
 
-.table_body:hover::-webkit-scrollbar-thumb{
+.table_body:hover::-webkit-scrollbar-thumb {
     visibility: visible;
-
 }
-
-.content {
-    flex: 1;
-}
-
-/*--> FONT <--*/
 
 .brand-text {
     font-family: 'Lobster Two', cursive;
     font-size: 2rem;
     color: #F9F3BF;
+    vertical-align: middle;
 }
 
+<<<<<<< HEAD:Css/Administrador/administrador.css
 .text1{
+=======
+.text1 {
+>>>>>>> develop:css/Administrador/administrador.css
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: bold;
     color: black;
     padding-right: 0.5rem;
-
 }
 
-.textNameAdmin{
+.textNameAdmin {
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.9rem;
     padding-left: 0.5rem;
 }
 
-.text2{
+.text2 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -167,67 +168,53 @@ section.table{
     color: black;
 }
 
-
-/*--> CONTENEDORES <--*/
-
-.redes{
-   align-items: center;
-   text-align: center;
-   padding: 1rem;
+.redes {
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    padding-left: 5.2rem;
 }
 
-.bienvenido{
+.bienvenido {
     padding: 0.2rem 5.7rem 0rem 0rem;
 }
 
 
-.links{
-    padding-right: 3.2rem;
-}
-
-/* Contenedor del footer */
-.footer {
-    padding: 1rem 0; /* Reducir el relleno vertical */
-}
-
-/*--> IMAGES <--*/
-
-.imgUser{
+.imgUser {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
     padding-bottom: 0.01rem;
 }
 
-.imgLogo{
+.imgLogo {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
 }
 
-/*--> NAVBAR <--*/
-
-.logoPanaceum{
+.logoPanaceum {
     padding-left: 3.4rem;
 }
 
-.navbar1{
+.navbar1 {
     display: flex;
     height: 3.5rem;
 }
-
 
 .bg-navbar1color {
     background-color: #1287AF;
 }
 
-.bg-navbarcolor{
+.bg-navbarcolor {
     background-color: #6397A9;
 }
 
-.nav-item{
-    padding-left: 1rem;
-    padding-right: 1rem;
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-right: 4.3rem;
 }
 
 .nav-item:hover {
@@ -239,24 +226,22 @@ section.table{
 .navbar-dark .nav-item .nav-link {
     color: #fff;
 }
-  
+
 .navbar-dark .nav-item .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
     border-radius: 0.25rem;
     color: #fff;
 }
-  
+
 .fa-li {
     position: relative;
     left: 0;
 }
 
-/*BUTTON NAVBAR*/
-
 .btn-cerrar-sesion {
     background-color: #06546F !important;
-    color: #fff !important; 
+    color: #fff !important;
 }
 
 .btn-cerrar-sesion:hover {
@@ -269,13 +254,7 @@ section.table{
 }
 
 
-/* ICONS NAVBAR */  
-
-.redes{
-    padding-left: 5.2rem;
-}
-
-.iconRedes{
+.iconRedes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,16 +264,10 @@ section.table{
     transition: all 0.3s ease;
 }
 
-.iconRedes:hover{
+.iconRedes:hover {
     transform: scale(1.2);
 }
 
-.brand-text {
-    vertical-align: middle;
-}
-  
-
-/*--> FOOTER <--*/
 footer {
     background-color: #f8f9fa;
     padding: 2rem;
@@ -302,7 +275,8 @@ footer {
     bottom: 0;
 }
 
-.bg-footer-color{
+.bg-footer-color {
     background-color: #06546F;
 }
+
 
