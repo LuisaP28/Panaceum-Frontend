@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => {
             if (response.ok) {
                 formLogin.reset();
-                window.location.href = "https://www.prueba.com";  // ! CAMBIAR LA URL POR LA QUE SE NECESITE REDIRECIONAR
+                window.location.href =
+                  "http://127.0.0.1:5500/administrador.html";  // ! CAMBIAR LA URL POR LA QUE SE NECESITE REDIRECIONAR
             } else {
                 return response.json().then(errorData => {
                     throw new Error(errorData.message || "Error al iniciar sesión");
