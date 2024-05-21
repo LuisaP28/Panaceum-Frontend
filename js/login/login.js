@@ -20,13 +20,15 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => {
             if (response.ok) {
                 formLogin.reset();
-                window.location.href =
-                  "http://127.0.0.1:5500/administrador.html";  // ! CAMBIAR LA URL POR LA QUE SE NECESITE REDIRECIONAR
+                return response.json();
             } else {
                 return response.json().then(errorData => {
                     throw new Error(errorData.message || "Error al iniciar sesión");
                 });
             }
+        })
+        .then(data => {
+            localStorage.setItem('access_token', data.access_token);
         })
         .catch(error => {
             console.error("Error en el inicio de sesión:", error);
