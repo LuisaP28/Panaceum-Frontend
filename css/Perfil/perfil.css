@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 body {
     margin: 0;
     padding: 0;
@@ -10,18 +13,157 @@ body {
     background-color: #4E7D8D;
 }
 
-.center{
+/* html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+} */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 10rem);
+    padding: 2rem;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.cards {
+    background-color: #F5F2DB;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.cards:hover {
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/*--> FONT <--*/
+.titleInput {
+    flex: 1;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-weight: bold;
+}
+
+/*--> INPUTS <--*/
+.input {
+    flex: 2;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fef6ac77;
+    margin-left: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.input:hover {
+    border: 1px solid;
+}
+
+/*--> BOTONES <--*/
+.btnSelec {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0.75rem;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #fef6ac77;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 2px);
+}
+
+.btnSelec:hover {
+    border: none;
+
+}
+
+.btnGuardar {
+    background-color: #427282 !important;
+    color: #fff !important;
+    border: solid 2px #427282;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.btnGuardar:hover {
+    background-color: #365c66;
+}
+
+#guardarBtn {
+    font-family: 'Jutson', sans-serif;
+    font-size: 1.2rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*NAVBAR Y FOOTER*/
+.center {
     display: flex;
     flex-direction: column;
 }
 
-.form-container{
+.form-container {
     justify-content: center;
     align-content: center;
     width: 30%;
 }
 
-.imgPerfil{
+.imgPerfil {
     width: 10rem;
 }
 
@@ -31,154 +173,130 @@ body {
     flex: 1;
 }
 
-/*--> FONT <--*/
+.text1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    padding-right: 0.5rem;
+}
+
+.textNameAdmin {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+}
+
+.text2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
 
 .brand-text {
     font-family: 'Lobster Two', cursive;
-    font-size: 30px;
+    font-size: 2rem;
     color: #F9F3BF;
+    vertical-align: middle;
 }
 
-
-
-.text1{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: black;
-}
-
-.text2{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: black;
-}
-
-.text-center{
-    margin-top: 8px;
-    margin-bottom: 2px;
-}
-
-/*--> CONTENEDORES <--*/
-
-.redes{
-   align-items: center;
-   text-align: center;
-   padding: 20px;
-}
-
-.bienvenido{
-    padding: 1rem 5.7rem 0rem 0rem;
-}
-
-
-.container{
-    height: 55px;
+.redes {
+    align-items: center;
     text-align: center;
-    margin-top: 2px;
-    padding-left: 20rem;
+    padding: 1rem;
+    padding-left: 5.2rem;
 }
 
-.links{
-    padding-right: 4.2rem;
+.bienvenido {
+    padding: 0.2rem 5.7rem 0rem 0rem;
 }
 
-/* Contenedor del footer */
-.footer {
-    padding: 6px 0; /* Reducir el relleno vertical */
+
+.imgUser {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    padding-bottom: 0.01rem;
 }
 
-/*--> IMAGES <--*/
-
-.imgUser{
-    width: 40px;
-    height: 38px;
+.imgLogo {
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
 }
 
-.imgLogo{
-    width: 50px;
-    height: 48px;
-    border-radius: 50%;
-}
-
-/*--> NAVBAR <--*/
-
-.logoPanaceum{
+.logoPanaceum {
     padding-left: 3.4rem;
 }
 
-.navbar1{
+.navbar1 {
     display: flex;
+    height: 3.5rem;
 }
-
 
 .bg-navbar1color {
     background-color: #1287AF;
 }
 
-.bg-navbarcolor{
+.bg-navbarcolor {
     background-color: #6397A9;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-right: 4.3rem;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 1px;
 }
 
 .navbar-dark .nav-item .nav-link {
     color: #fff;
 }
-  
+
 .navbar-dark .nav-item .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
     border-radius: 0.25rem;
     color: #fff;
 }
-  
+
 .fa-li {
     position: relative;
     left: 0;
 }
 
-/*BUTTON NAVBAR*/
-
-.btn-cerrar-sesion {
-    background-color: #06546F !important;
-    color: #fff !important; /* Cambia el color del texto a blanco */
-}
-
-#cerrarSesionBtn {
-    font-family: 'Jutson', sans-serif;
-    font-size: 10px;
+#logoutBtn {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.75rem;
 }
 
 
-/* ICONS NAVBAR */  
-
-.redes{
-    padding-left: 4.8rem;
-}
-
-.iconRedes{
+.iconRedes {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 40px;
-    height: 40px;
-    font-size: 25px;
-    border-radius: 50px;
+    min-width: 2rem;
+    font-size: 1.5rem;
     color: rgb(0, 0, 0);
     transition: all 0.3s ease;
 }
 
-.iconRedes:hover{
+.iconRedes:hover {
     transform: scale(1.2);
 }
 
-.brand-text {
-    vertical-align: middle;
+.bg-footer-color {
+    background-color: #06546F;
 }
-  
 
 /*--> FOOTER <--*/
 footer {
@@ -189,223 +307,6 @@ footer {
 
 }
 
-.bg-footer-color{
+.bg-footer-color {
     background-color: #06546F;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
