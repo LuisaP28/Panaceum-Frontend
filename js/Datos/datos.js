@@ -1,14 +1,23 @@
-//Botón select//
-// document.addEventListener('DOMContentLoaded', function() {
-//     const dropdownMenu = document.querySelector('.dropdown-menu');
-//     const selectedOption = document.getElementById('selectedOption');
+export async function consumirAPI(mensaje) {
+  const URL = "https://www.datos.gov.co/resource/i7cb-raxc.json"
+  const respuesta = await fetch(URL)
+  const datos = await respuesta.json()
+  imprimirDatos(datos.splice(1, 100))
+}
+function imprimirDatos(datos) {
 
-//     dropdownMenu.addEventListener('click', function(event) {
-//         const target = event.target;
+  datos.forEach(element => {
+      console.log(datos)
+      document.body.innerHTML += `
+      <div class="card" style="width: 18rem;">
+          <img src="${element.url}" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">${element.title}</h5>
+          </div>
+      </div>
+      `;
+  });
+}
 
-//         if (target.classList.contains('dropdown-item')) {
-//             const selectedValue = target.textContent;
-//             selectedOption.value = selectedValue;
-//         }
-//     });
-// });
+const mensaje = "Hola, desde consumir API"
+export default mensaje;
