@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Estilo global */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración del body para usar flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #FFF6F6 0%, #E3E2E5 19%, #CAD1D6 45%, #4E7D8D 100%);
+    background-color: #4E7D8D;
+}
+
+/* Asegurando que el contenido ocupe el espacio disponible */
+.content {
+    flex: 1;
+}
+
+.text1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    padding-right: 0.5rem;
+}
+
+.textNameAdmin {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+}
+
+.text2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+.brand-text {
+    font-family: 'Lobster Two', cursive;
+    font-size: 2rem;
+    color: #F9F3BF;
+    vertical-align: middle;
+}
+
+.redes {
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    padding-left: 5.2rem;
+}
+
+.bienvenido {
+    padding: 0.2rem 5.7rem 0rem 0rem;
+}
+
+
+.imgUser {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    padding-bottom: 0.01rem;
+}
+
+.imgLogo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.logoPanaceum {
+    padding-left: 3.4rem;
+}
+
+.navbar1 {
+    display: flex;
+    height: 3.5rem;
+}
+
+.bg-navbar1color {
+    background-color: #1287AF;
+}
+
+.bg-navbarcolor {
+    background-color: #6397A9;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-right: 4.3rem;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 1px;
+}
+
+.navbar-dark .nav-item .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 0.25rem;
+    color: #fff;
+}
+
+.fa-li {
+    position: relative;
+    left: 0;
+}
+
+#logoutBtn {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.75rem;
+}
+
+
+.iconRedes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 2rem;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.iconRedes:hover {
+    transform: scale(1.2);
+}
+
+.bg-footer-color {
+    background-color: #06546F;
+}
+
+.contenedorPpal{
+    /* display: flex; */
+    flex-direction: column;
+    margin: 5%;
+    padding: 1rem;
+    position: relative;
+}
+
+.contenedor2Inicio{
+    width: 30rem;
+    padding: 1rem;
+    margin: 3%;
+    margin-left: 20rem;
+    margin-bottom: 4%;
+    border-bottom: solid #44936D;
+}
+
+.contenedor3Inicio{
+    width: 20rem;
+    padding-top: 7rem;
+    margin-left: 20rem;
+    margin-bottom: 4%;
+    border-bottom: solid #44936D;
+}
+
+/*--> FONT <--*/
+
+.title1{
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #6397A9;
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+/*--> IMAGES <--*/
+.contenedorImagenes{
+    position: relative;
+    display: flex;
+    height: 10rem;
+    width: 32rem;
+    margin-left: 18rem;
+}
+
+.img1{
+    position: absolute;
+    top: -4rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    animation: img1 2s linear infinite;
+}
+
+.img2{
+    position: absolute;
+    left: 10rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    animation: img2 2s 0.5s linear infinite;
+}
+
+.img3{
+    position: absolute;
+    left: 20rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    animation: img3 2s 1s linear infinite;
+}
+
+@keyframes img1 {
+    0%{
+        top: -4rem;
+    }
+    50%{
+        top: -2rem;
+    }
+    100%{
+        top: -4rem;
+    }
+}
+
+@keyframes img2 {
+    0%{
+        top: -4rem;
+    }
+    50%{
+        top: -2rem;
+    }
+    100%{
+        top: -4rem;
+    }
+}
+
+@keyframes img3 {
+    0%{
+        top: -4rem;
+    }
+    50%{
+        top: -2rem;
+    }
+    100%{
+        top: -4rem;
+    }
+}
+/*--> CARD <--*/
+
+.contenedorCard{
+    background-color: #44936D;
+    color: white;
+    border-radius: 4%;
+    transition: transform 0.3s;
+    position: absolute;
+    top: 30vh;
+    left: 60vw;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.card-content{
+    padding: 20rem;
+}
+
+.card-title{
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.card-text{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    overflow:hidden;
+}
+
+.contenedorCard:hover {
+    transform: scale(1.1); 
+}
+
+
+footer {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    width: 100%;
+    bottom: 0;
+}

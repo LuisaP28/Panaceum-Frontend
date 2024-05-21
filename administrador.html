@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Administrador/administrador.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dancing+Script:wght@700&family=Judson:ital,wght@0,400;0,700;1,400&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@800&family=Raleway:wght@700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Panaceum</title>
+  </head>
+  <body>
+    
+    <!-- NAVBAR1 -->
+    <nav class="navbar1 navbar-light bg-navbar1color">
+      <div class="redes">
+        <!-- Redes Sociales -->
+        <div class="social-media-icons">
+          <i class="fab fa-facebook-f iconRedes"></i>
+          <i class="fab fa-twitter iconRedes"></i>
+          <i class="fab fa-instagram iconRedes"></i>
+          <i class="fab fa-whatsapp iconRedes"></i>
+        </div>
+      </div>
+      <!-- Final de Redes Sociales -->
+
+      <div class="bienvenido ml-auto">
+        <a class="navbar-brand" href="#">
+          <p class="text1 navbar-text">Bienvenido administrador</p>
+          <img
+            src="./Images/WhatsApp Image 2021-11-13 at 10.13.35 AM.jpeg"
+            alt=""
+            width="30"
+            height="24"
+            class="imgUser d-inline-block align-text-top"
+          />
+          <p class="textNameAdmin navbar-text">Miguel Tabares</p>
+        </a>
+        <button
+          id="logoutBtn"
+          class="btn btn-cerrar-sesion"
+          type="submit"
+        >
+          Cerrar sesión
+        </button>
+      </div>
+    </nav>
+
+    <!-- NAVBAR2-->
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-navbarcolor">
+      <div class="container">
+        <a class="logoPanaceum navbar-brand" href="#">
+          <img
+            class="imgLogo"
+            src="./images/Logo17777.PNG"
+            alt=""
+            width="30"
+            height="24"
+          />
+          <span class="brand-text">Panaceum</span>
+        </a>
+      </div>  
+
+        <!-- Botón para activar la barra de navegación en pantallas pequeñas -->
+      <div class="menuHamburguesa">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Contenido de la barra de navegación -->
+      <div class="links collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="text1 nav-link" aria-current="page" href="./inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="text1 nav-link" href="#">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="text1 nav-link" href="#">Datos</a>
+          </li>
+          <li class="nav-item">
+            <a class="text1 nav-link" href="#">Tratamiento</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- FINAL NAVBAR -->
+
+  <!-- MODAL DE CREACIÓN DE PACIENTE -->
+  <div class="modal fade" id="createPatientModal" tabindex="-1" role="dialog" aria-labelledby="createPatientModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="createPatientModalLabel">Crear Paciente</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="createPatientForm">
+            <div class="form-group">
+              <label for="patientName">Nombre completo</label>
+              <input type="text" class="form-control" id="patientName" required>
+            </div>
+            <div class="form-group">
+              <label for="patientType">Tipo de documento</label>
+              <input type="text" class="form-control" id="patientType" required>
+            </div>
+            <div class="form-group">
+              <label for="patientCC">Documento</label>
+              <input type="text" class="form-control" id="patientCC" required>
+            </div>
+            <div class="form-group">
+              <label for="patientBirth">Fecha de nacimiento</label>
+              <input type="date" class="form-control" id="patientBirth" required>
+            </div>
+            <div class="form-group">
+              <label for="patientEmail">Email</label>
+              <input type="email" class="form-control" id="patientEmail" required>
+            </div>
+            <div class="form-group">
+              <label for="patientDiag">Diagnóstico</label>
+              <input type="text" class="form-control" id="patientDiag" required>
+            </div>
+            <div class="form-group">
+              <label for="patientMed">Medicamento</label>
+              <input type="text" class="form-control" id="patientMed" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DE ACTUALIZACIÓN DE PACIENTE -->
+
+    <div class="modal fade" id="updatePatientModal" tabindex="-1" role="dialog" aria-labelledby="updatePatientModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="updatePatientModalLabel">Actualizar Paciente</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="updatePatientForm">
+              <input type="hidden" id="updatePatientId">
+              <div class="form-group">
+                <label for="updatePatientName">Nombre completo</label>
+                <input type="text" class="form-control" id="updatePatientName" required>
+              </div>
+              <div class="form-group">
+                <label for="updatePatientType">Tipo de documento</label>
+                <input type="text" class="form-control" id="updatePatientType" required>
+              </div>
+              <div class="form-group">
+                <label for="updatePatientCC">Documento</label>
+                <input type="text" class="form-control" id="updatePatientCC" required>
+              </div>
+              <div class="form-group">
+                <label for="updatePatientBirth">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="updatePatientBirth" required>
+              </div>
+              <div class="form-group">
+                <label for="updatePatientEmail">Email</label>
+                <input type="email" class="form-control" id="updatePatientEmail" required>
+              </div>
+              <div class="form-group">
+                <label for="updatePatientDiag">Diagnóstico</label>
+                <input type="text" class="form-control" id="updatePatientDiag" required>
+              </div>
+              <div class="form-group">
+                <label for="updatePatientMed">Medicamento</label>
+                <input type="text" class="form-control" id="updatePatientMed" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- CONTENIDO DE INICIO -->
+    <div class="center-container">
+      <main class="table-container ">
+
+        <section class="table">
+          <div class="table_header">
+            <h1 class="title_table">Sistema de gestión de usuarios</h1>
+            <div class="input">
+              <div class="input-container">
+                <input id="searchPatientInput" type="text" placeholder="Ingrese el nombre del paciente">
+                <button class="btn btn-outline-primary" type="button" id="btnGet">Listar</button>
+              </div>
+              <div class="button-container">
+                <button class="btn btn-outline-success" type="button" id="btnPost">Crear</button>
+              </div>
+            </div>
+          </div>
+          <div class="table_body">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nombre completo</th>
+                  <th>Tipo de documento</th>
+                  <th>Documento</th>
+                  <th>Fecha de nacimiento</th>
+                  <th>Email</th>
+                  <th>Diagnóstico</th>
+                  <th>Medicamento</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody class="tbody" id="tbodyPatient">
+                <!-- ESPACIO PARA LLENAR LA TABLA DINÁMICAMENTE -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- FINAL DEL CONTENIDO DE INICIO -->
+
+    <!-- FOOTER-->
+
+    <footer class="footer bg-footer-color">
+      <!-- Copyright -->
+      <div class="text2 text-center p-3">
+        © 2024 Copyright:
+        <a class="text2" href="">Riwi-Coders</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- FINAL FOOTER-->
+
+  <!-- Scripts de Bootstrap y otros -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa2nUwvY8vUU0Z68/rT04d4n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy+VWRDajdLEaU5zKUKdC9z/4+I5Bp59C+bbba" crossorigin="anonymous"></script>
+    <script type="module" src="./js/Administrador/administrador.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
