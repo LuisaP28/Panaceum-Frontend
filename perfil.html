@@ -137,30 +137,30 @@
           </div>
 
           <div class="mb-3">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre completo">
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Nombre completo">
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tipo de documento">
+            <input type="text" class="form-control" id="documentType" aria-describedby="emailHelp" placeholder="Tipo de documento">
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Número de documento">
+            <input type="number" class="form-control" id="documentNumber" aria-describedby="emailHelp" placeholder="Número de documento">
           </div>          
           <div class="mb-3">
-            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Fecha de nacimiento">
+            <input type="date" class="form-control"  id="dateBirth"  aria-describedby="emailHelp" placeholder="Fecha de nacimiento">
           </div>            
           <div class="mb-3">
-            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Género">
+            <input type="text" class="form-control"   id="gender" aria-describedby="emailHelp" placeholder="Género">
           </div> 
           <div class="mb-3">
-            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="RH">
+            <input type="text" class="form-control"  id="typeBloodPatient" aria-describedby="emailHelp" placeholder="RH">
           </div>                       
           <div class="mb-3">
-            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
+            <input type="email" class="form-control"  id="email"  aria-describedby="emailHelp" placeholder="Email">
           </div> 
           <div class="mb-3">
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+            <input type="password" class="form-control" id="password" placeholder="Contraseña">
           </div>
-          <button type="submit" class="btn btn-primary">Actualizar</button>
+          <button type="submit" id="create"  class="btn btn-primary">Actualizar</button>
         </form>
       </section>
     </main>
@@ -271,5 +271,8 @@
       @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
     </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="module" src="js/ApiFetch/clientHTTP.js"></script>
+    <script type="module" src="js/Perfil/perfil.js"></script>
   </body>
 </html>
